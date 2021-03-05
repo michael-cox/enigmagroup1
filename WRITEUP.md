@@ -24,15 +24,15 @@ You can find a basic guide for markdown formatting [here](https://www.markdowngu
 ### Basic 1
 
 #### Credentials
-39f13b
+`39f13b`
 
 #### How you found the credentials
 The password is stored in a comment in the source html. One can use chrome's 'Inspect Element' to view the commented password.
 
 #### What sins are evidenced in this challenge
-[CWE-312: Cleartext Storage of Sensitive Information](https://cwe.mitre.org/data/definitions/312.html)
-[CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
-[CWE-615: Inclusion of Sensitive Information in Source Code](https://cwe.mitre.org/data/definitions/615.html)
+* [CWE-312: Cleartext Storage of Sensitive Information](https://cwe.mitre.org/data/definitions/312.html)
+* [CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
+* [CWE-615: Inclusion of Sensitive Information in Source Code](https://cwe.mitre.org/data/definitions/615.html)
 
 #### How could those sins be mitigated
 1. Remove the password from the source.
@@ -53,10 +53,10 @@ The password is stored in a comment in the source html. One can use chrome's 'In
 3. `password.inc` contains the cleartext credentials.
 
 #### What sins are evidenced in this challenge
-[CWE-209: Generation of Error Message Containing Sensitive Information](https://cwe.mitre.org/data/definitions/209.html)
-[CWE-313: Cleartext Storage in a File or on Disk](https://cwe.mitre.org/data/definitions/313.html)
-[CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
-[CWE-548: Exposure of Information Through Directory Listing](https://cwe.mitre.org/data/definitions/548.html)
+* [CWE-209: Generation of Error Message Containing Sensitive Information](https://cwe.mitre.org/data/definitions/209.html)
+* [CWE-313: Cleartext Storage in a File or on Disk](https://cwe.mitre.org/data/definitions/313.html)
+* [CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
+* [CWE-548: Exposure of Information Through Directory Listing](https://cwe.mitre.org/data/definitions/548.html)
 
 #### How could those sins be mitigated
 1. Securely hash passwords.
@@ -82,10 +82,10 @@ $password = "f0rkblork";
 3. `config.inc` contains the credentials in cleartext.
 
 #### What sins are evidenced in this challenge
-[CWE-200: Exposure of Sensitive Information to an Unauthorized Actor](https://cwe.mitre.org/data/definitions/200.html)
-[CWE-313: Cleartext Storage in a File or on Disk](https://cwe.mitre.org/data/definitions/313.html)
-[CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
-[CWE-548: Exposure of Information Through Directory Listing](https://cwe.mitre.org/data/definitions/548.html)
+* [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor](https://cwe.mitre.org/data/definitions/200.html)
+* [CWE-313: Cleartext Storage in a File or on Disk](https://cwe.mitre.org/data/definitions/313.html)
+* [CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
+* [CWE-548: Exposure of Information Through Directory Listing](https://cwe.mitre.org/data/definitions/548.html)
 
 #### How could those sins be mitigated
 1. Securely hash passwords.
@@ -106,10 +106,10 @@ N/A.
 1. Use Chrome's Inspect Element tool to change one of the Select form's options to "Jane".
 
 #### What sins are evidenced in this challenge
-[CWE-200: Exposure of Sensitive Information to an Unauthorized Actor](https://cwe.mitre.org/data/definitions/200.html)
-[CWE-287: Improper Authentication](https://cwe.mitre.org/data/definitions/287.html)
-[CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
-[CWE-656: Reliance on Security Through Obscurity](https://cwe.mitre.org/data/definitions/656.html)
+* [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor](https://cwe.mitre.org/data/definitions/200.html)
+* [CWE-287: Improper Authentication](https://cwe.mitre.org/data/definitions/287.html)
+* [CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
+* [CWE-656: Reliance on Security Through Obscurity](https://cwe.mitre.org/data/definitions/656.html)
 
 #### How could those sins be mitigated
 1. Remove hint of correct username.
@@ -131,10 +131,10 @@ N/A.
 4. Notice that the authentication success redirects to `skriptkid.php`.
 
 #### What sins are evidenced in this challenge
-[CWE-259: Use of Hard-coded Password](https://cwe.mitre.org/data/definitions/259.html)
-[CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
-[CWE-602: Client-Side Enforcement of Server-Side Security](https://cwe.mitre.org/data/definitions/602.html)
-[CWE-615: Inclusion of Sensitive Information in Source Code](https://cwe.mitre.org/data/definitions/615.html)
+* [CWE-259: Use of Hard-coded Password](https://cwe.mitre.org/data/definitions/259.html)
+* [CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
+* [CWE-602: Client-Side Enforcement of Server-Side Security](https://cwe.mitre.org/data/definitions/602.html)
+* [CWE-615: Inclusion of Sensitive Information in Source Code](https://cwe.mitre.org/data/definitions/615.html)
 
 #### How could those sins be mitigated
 1. Enforce password authentication on the server.
@@ -158,11 +158,11 @@ N/A.
 4. Notice that the authentication success redirects to `Sauc3.php`.
 
 #### What sins are evidenced in this challenge
-[CWE-259: Use of Hard-coded Password](https://cwe.mitre.org/data/definitions/259.html)
-[CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
-[CWE-602: Client-Side Enforcement of Server-Side Security](https://cwe.mitre.org/data/definitions/602.html)
-[CWE-615: Inclusion of Sensitive Information in Source Code](https://cwe.mitre.org/data/definitions/615.html)
-[CWE-656: Reliance on Security Through Obscurity](https://cwe.mitre.org/data/definitions/656.html)
+* [CWE-259: Use of Hard-coded Password](https://cwe.mitre.org/data/definitions/259.html)
+* [CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
+* [CWE-602: Client-Side Enforcement of Server-Side Security](https://cwe.mitre.org/data/definitions/602.html)
+* [CWE-615: Inclusion of Sensitive Information in Source Code](https://cwe.mitre.org/data/definitions/615.html)
+* [CWE-656: Reliance on Security Through Obscurity](https://cwe.mitre.org/data/definitions/656.html)
 
 #### How could those sins be mitigated
 1. Enforce password authentication on the server.
@@ -188,10 +188,10 @@ N/A.
 5. Notice that the authentication success redirects to `shifted.php`.
 
 #### What sins are evidenced in this challenge
-[CWE-259: Use of Hard-coded Password](https://cwe.mitre.org/data/definitions/259.html)
-[CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
-[CWE-602: Client-Side Enforcement of Server-Side Security](https://cwe.mitre.org/data/definitions/602.html)
-[CWE-615: Inclusion of Sensitive Information in Source Code](https://cwe.mitre.org/data/definitions/615.html)
+* [CWE-259: Use of Hard-coded Password](https://cwe.mitre.org/data/definitions/259.html)
+* [CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
+* [CWE-602: Client-Side Enforcement of Server-Side Security](https://cwe.mitre.org/data/definitions/602.html)
+* [CWE-615: Inclusion of Sensitive Information in Source Code](https://cwe.mitre.org/data/definitions/615.html)
 
 #### How could those sins be mitigated
 1. Enforce password authentication on the server.
@@ -217,10 +217,10 @@ N/A.
 6. Notice that the authentication success redirects to `ASCII-Chart.php`.
 
 #### What sins are evidenced in this challenge
-[CWE-259: Use of Hard-coded Password](https://cwe.mitre.org/data/definitions/259.html)
-[CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
-[CWE-602: Client-Side Enforcement of Server-Side Security](https://cwe.mitre.org/data/definitions/602.html)
-[CWE-615: Inclusion of Sensitive Information in Source Code](https://cwe.mitre.org/data/definitions/615.html)
+* [CWE-259: Use of Hard-coded Password](https://cwe.mitre.org/data/definitions/259.html)
+* [CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
+* [CWE-602: Client-Side Enforcement of Server-Side Security](https://cwe.mitre.org/data/definitions/602.html)
+* [CWE-615: Inclusion of Sensitive Information in Source Code](https://cwe.mitre.org/data/definitions/615.html)
 
 #### How could those sins be mitigated
 1. Enforce password authentication on the server.
